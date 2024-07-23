@@ -54,7 +54,7 @@ a {
 
 
 :root {
-    --color-green: #8FE20E;
+    --color-green: #27e20e;
     --color-black: #202020;
     --color-white: #fafafa;
 }
@@ -108,10 +108,15 @@ a {
 }
 
 .img-user {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 8px;
     border: 2px solid var(--color-green);
+}
+
+.name-user {
+    display: block;
+
 }
 
 .name-user h1 {
@@ -124,6 +129,12 @@ a {
 .name-user span {
     color: #fafafab4;
     font-size: 0.8rem;
+}
+
+.name-user p {
+    color: #fafafab4;
+    font-size: 0.7rem;
+    margin: 20px 0px 0px 0px;
 }
 
 .info-icon {
@@ -166,6 +177,30 @@ a {
     font-size: 1rem;
     padding-bottom: 0.3rem;
 }
+
+.music-style {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-style-item {
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    transition: color 0.3s;
+}
+
+.music-style-item:hover {
+    cursor: pointer;
+    color: var(--color-green);
+}
+
 
 .skills-icons {
     width: 100%;
@@ -275,7 +310,7 @@ a {
 .img-tread {
     width: 100%;
     height: 100px;
-    background-image: url(/img/tread-skateboard.jpg);
+    background-image: url(/img/bandavarandas.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -325,6 +360,21 @@ a {
 
 .redes-sociais .github:hover i {
     color: #000;
+    transition: color 0.3s;
+}
+
+.redes-sociais .youtube:hover i {
+    color: #f71e1e;
+    transition: color 0.3s;
+}
+
+.redes-sociais .whatsapp:hover i {
+    color: #36ca0a;
+    transition: color 0.3s;
+}
+
+.redes-sociais .spotify:hover i {
+    color: #238d35;
     transition: color 0.3s;
 }
 
