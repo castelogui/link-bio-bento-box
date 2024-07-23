@@ -184,6 +184,7 @@ a {
 .music-style {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -191,9 +192,12 @@ a {
 .music-style-item {
     color: #fff;
     font-variant: small-caps;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 700;
+    min-width: 18%;
+    text-align: center;
     padding: 5px;
+    margin: 5px;
     border-radius: 5px;
     background-color: #3f3f3f;
     transition: color 0.3s;
