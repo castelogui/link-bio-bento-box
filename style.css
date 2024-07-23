@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #151515;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -389,15 +389,72 @@ a {
 /****************** WIDGET 4 */
 .widget4 {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.widget4 .link-whatsapp {
+    padding: 1rem;
+    color: var(--color-black);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 100%;
     height: 16%;
     background-color: var(--color-green);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-black);
-    padding: 1rem;
     animation: shake 1.5s linear infinite;
+}
+
+.widget4 .galeria {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.widget4 .galeria .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.widget4 .galeria .slides img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #007396;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.next {
+    right: 0;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .meu-site {
@@ -472,7 +529,7 @@ a {
 }
 
 .widget6 iframe {
-    height: 40vh;
+    height: 35vh;
     width: 90vw;
 }
 
@@ -490,7 +547,6 @@ a {
 .widget2:hover,
 .tread:hover,
 .box-social:hover,
-.widget4:hover,
 .widget5:hover {
     transform: translateY(-5px);
 }
@@ -567,4 +623,52 @@ a {
 .meu-site img,
 .freelancer img {
     animation: pulse 3s infinite ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .body {
+        max-width: 100vw;
+        padding: 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .content, .redes-sociais {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .widget1, .widget2, .widget4, .widget5, .widget6 {
+        width: 48%;
+        max-width: 48vw;
+        min-height: 150px;
+    }
+
+    .widget2 {
+        height: 16%;
+    }
+
+    .widget3 {
+        width: 100%;
+    }
+
+    .widget3 a {
+        width: 20%;
+        height: 100%;
+    }
+
+    .redes-sociais i {
+        font-size: 4rem;
+    }
+
+    .widget3 .redes-sociais {
+        width: 80%;
+    }
+
+    .widget6 iframe {
+        width: 100%;
+    }
 }
