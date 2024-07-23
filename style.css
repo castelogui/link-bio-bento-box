@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #151515;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -63,7 +63,6 @@ a {
     display: inline;
     border-radius: 20px;
     width: 95%;
-    max-width: 400px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -465,6 +464,11 @@ a {
     color: #fafafab4;
     font-size: 1rem;
     padding-top: 1rem;
+}
+
+.widget6 iframe {
+    height: 40vh;
+    width: 90vw;
 }
 
 /* ANIMAÇÕES */
